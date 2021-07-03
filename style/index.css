@@ -1,0 +1,35 @@
+h3 {
+  color: orange;
+}
+
+.navbar {
+  background-color: #d5d6d6;
+}
+
+.navbar-brand {
+  color: #0000cd;
+}
+
+.main-navbar ul li a {
+  color: #0000cd;
+}
+
+.main-navbar ul li.active a {
+  color: #fff;
+}
+
+.new-layout {
+  margin-top: -110px;
+}
+
+.new-layout-organ {
+  margin-top: -50px;
+}
+
+#check-semester {
+  visibility: hidden;
+}
+
+.footer_copyright {
+  background-color: blue;
+}

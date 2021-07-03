@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">JASA MARGA</a>
+
+      <!-- Toggle Responsive -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="main-navbar collapse navbar-collapse" id="navbarScroll">
+        <ul
+          class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll"
+          style="max-height: 100px"
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Lowongan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Informasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Info Perusahaan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Masuk</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Breadcrumb -->
+    <section id="breadcrumb">
+      <div class="container">
+        <nav>
+          <ol class="breadcrumb pl-0 bg-transparent">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item">Lowongan</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Registrasi
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <!-- End Breadcrumb -->
+
+    <!-- Content -->
+    <section id="content">
+      <div class="container pb-5">
+        <!-- Title -->
+        <div class="row pt-2 pb-3 title justify-content-center">
+          <div class="col-12 text-center">
+            <h3 class="text-uppercase">form registrasi magang jasa marga</h3>
+          </div>
+        </div>
+
+        <!-- form data-diri -->
+        <section id="data_diri">
+          <div class="form">
+            <h4 class="text-uppercase">Data Diri</h4>
+            <form>
+              <div class="form-group row pt-3">
+                <label for="input-nama" class="col-sm-2 col-form-label"
+                  >Nama Lengkap*</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-nama"
+                    required
+                  />
+                </div>
+                <label for="input-ktp" class="col-sm-2 col-form-label"
+                  >Nomor KTP*</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="input-ktp"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row pt-1">
+                <label for="input-jk" class="col-sm-2 col-form-label"
+                  >Jenis Kelamin*</label
+                >
+                <div class="col-sm-4">
+                  <select class="custom-select" required>
+                    <option selected></option>
+                    <option value="1">Laki - laki</option>
+                    <option value="2">Perempuan</option>
+                  </select>
+                </div>
+
+                <label for="input-file" class="col-sm-2 col-form-label"
+                  >File KTP*</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="input-file"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row pt-1">
+                <label for="tempat-lahir" class="col-sm-2 col-form-label"
+                  >Tempat Lahir*</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="tempat-lahir"
+                    required
+                  />
+                </div>
+                <label for="input-bank" class="col-sm-2 col-form-label"
+                  >Nama Bank Akun</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="input-bank" />
+                </div>
+              </div>
+
+              <div class="form-group row pt-1">
+                <label for="tanggal-lahir" class="col-sm-2 col-form-label"
+                  >Tanggal Lahir*</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="tanggal-lahir"
+                    required
+                  />
+                </div>
+                <label for="input-bank" class="col-sm-2 col-form-label"
+                  >Nomor Bank Akun</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="input-bank" />
+                </div>
+              </div>
+
+              <div class="form-group row pt-1">
+                <label for="input-agama" class="col-sm-2 col-form-label"
+                  >Agama*</label
+                >
+                <div class="col-sm-4">
+                  <select class="custom-select" required>
+                    <option selected></option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Katholik">Katholik</option>
+                    <option value="Hindu">Hindu</option>
+                  </select>
+                </div>
+                <label for="input-alamat" class="col-sm-2 col-form-label"
+                  >Alamat Domisili*</label
+                >
+                <div class="col-sm-4">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="input-alamat"
+                    rows="6"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-group new-layout row">
+                <label for="input-email" class="col-sm-2 col-form-label"
+                  >Email*</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="input-email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row pt-1 pb-5">
+                <label for="input-hp" class="col-sm-2 col-form-label"
+                  >Nomor HP*</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="input-hp"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- end form data-diri -->
+
+        <!-- form data pendidikan -->
+        <section id="data_pendidikan ">
+          <div class="form">
+            <h4 class="text-uppercase">Data Pendidikan</h4>
+            <form action="">
+              <div class="form-group row pt-3">
+                <label for="input-pendidikan" class="col-sm-2 col-form-label"
+                  >Pendidikan*</label
+                >
+                <div class="col-sm-4">
+                  <select class="custom-select">
+                    <option selected></option>
+                    <option value="S3">S3</option>
+                    <option value="S2">S2</option>
+                    <option value="S1">S1</option>
+                    <option value="D3">D3</option>
+                    <option value="SMA">SMA/SLTA Sederajat</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row pt-1">
+                <label for="input-pendidikan" class="col-sm-2 col-form-label"
+                  >Universitas*</label
+                >
+                <div class="col-sm-4">
+                  <select class="custom-select">
+                    <option selected></option>
+                    <option value="ITB">ITB</option>
+                    <option value="UNPAD">UNPAD</option>
+                    <option value="UGM">UGM</option>
+                  </select>
+                </div>
+                <label for="input-jurusan" class="col-sm-2 col-form-label"
+                  >Jurusan*</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="input-jurusan" />
+                </div>
+              </div>
+              <div class="form-group row pt-1">
+                <label for="tahun-lulus" class="col-sm-2 col-form-label"
+                  >Tahun Lulus*</label
+                >
+                <div class="col-sm-4">
+                  <select class="custom-select">
+                    <option selected></option>
+                    <option value="2019">2017</option>
+                    <option value="2019">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                  </select>
+                </div>
+                <div class="form-group col-6 mt-2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="checking"
+                      required
+                      onclick="showSemester()"
+                    />
+                    <label class="form-check-label" for="checking">
+                      Masih berkuliah sampai saat ini
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row" id="check-semester">
+                <div class="col-sm-6"></div>
+                <label for="input-jurusan" class="col-sm-2 col-form-label"
+                  >Semester*</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="input_jurusan"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- end form data pendidikan -->
+
+        <!-- form pengalaman organisasi -->
+        <section id="pengalaman_organisasi ">
+          <div class="form">
+            <h4 class="text-uppercase">Pengalaman Organisasi</h4>
+            <form action="" class="border border-dark mb-5">
+              <div class="form-group row pt-3 pl-2 pr-2">
+                <label for="colFormLabel" class="col-sm-2 col-form-label"
+                  >Organisasi *</label
+                >
+                <div class="col-sm-4">
+                  <input type="email" class="form-control" id="colFormLabel" />
+                </div>
+                <label for="input-alamat" class="col-sm-2 col-form-label"
+                  >Deskripsi Pekerjaan *</label
+                >
+                <div class="col-sm-4">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="input-alamat"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group row pl-2 pr-2 new-layout-organ">
+                <label for="colFormLabel" class="col-sm-2 col-form-label"
+                  >Tahun *</label
+                >
+                <div class="col-sm-4">
+                  <select class="custom-select">
+                    <option selected></option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row pl-2 pr-2">
+                <label for="colFormLabel" class="col-sm-2 col-form-label"
+                  >Jabatan *</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="jabatan" />
+                </div>
+                <label for="input-alamat" class="col-sm-2 col-form-label"
+                  >File
+                </label>
+                <div class="col-sm-4">
+                  <input type="file" class="form-control" id="file" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- end form pengalaman organisasi -->
+
+        <!-- form keahlian -->
+        <section id="data_keahlian ">
+          <div class="form">
+            <h4 class="text-uppercase">Keahlian yang dimiliki</h4>
+            <form action="">
+              <div class="form-group row pt-3 pb-5">
+                <label for="colFormLabel" class="col-sm-2 col-form-label"
+                  >Keahlian</label
+                >
+                <div class="col-sm-10">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="input-alamat"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- end form keahlian -->
+
+        <!-- form lain-lain -->
+        <section id="lain_lain">
+          <div class="form">
+            <h4 class="text-uppercase">Data Diri</h4>
+            <form>
+              <div class="form-group row pt-3">
+                <label for="input_file_cv" class="col-sm-2 col-form-label"
+                  >File CV *</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="input_file_cv"
+                    required
+                  />
+                </div>
+                <label for="input-photo" class="col-sm-2 col-form-label"
+                  >Pas Photo *</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="input-photo"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row pt-1 pb-5">
+                <label
+                  for="input_file_portofolio"
+                  class="col-sm-2 col-form-label"
+                  >Portofolio</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="input_file_portofolio"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- end form lain-lain -->
+
+        <!-- form social media  -->
+        <section id="social_media ">
+          <div class="form">
+            <h4 class="text-uppercase">Data Diri</h4>
+            <form>
+              <div class="form-group row pt-3">
+                <label for="linkendIn" class="col-sm-2 col-form-label"
+                  >LinkendIn</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="linkendIn" />
+                </div>
+                <label for="linkendIn" class="col-sm-2 col-form-label"
+                  >Instagram</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="linkendIn" />
+                </div>
+              </div>
+              <div class="form-group row pt-1">
+                <label for="linkendIn" class="col-sm-2 col-form-label"
+                  >Facebook</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="linkendIn" />
+                </div>
+                <label for="linkendIn" class="col-sm-2 col-form-label"
+                  >Twitter</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="linkendIn" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- form social media  -->
+
+        <!-- form radio button  -->
+        <section id="how_know">
+          <div class="form pt-5">
+            <h4>Mengenal Jasamarga dari ?</h4>
+            <form>
+              <div class="container">
+                <div class="row justify-content-between pl-3 pr-3 pt-2">
+                  <!-- Material inline 1 -->
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="materialInline1"
+                      name="inlineMaterialRadiosExample"
+                    />
+                    <label class="form-check-label" for="materialInline1"
+                      >Internet</label
+                    >
+                  </div>
+
+                  <!-- Material inline 2 -->
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="materialInline2"
+                      name="inlineMaterialRadiosExample"
+                    />
+                    <label class="form-check-label" for="materialInline2"
+                      >Instagram</label
+                    >
+                  </div>
+
+                  <!-- Material inline 3 -->
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="materialInline3"
+                      name="inlineMaterialRadiosExample"
+                    />
+                    <label class="form-check-label" for="materialInline3"
+                      >Twitter</label
+                    >
+                  </div>
+                </div>
+                <div class="row justify-content-between pl-3 pr-3 pt-2">
+                  <!-- Material inline 4 -->
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="materialInline4"
+                      name="inlineMaterialRadiosExample"
+                    />
+                    <label class="form-check-label" for="materialInline1"
+                      >Kampus</label
+                    >
+                  </div>
+
+                  <!-- Material inline 5 -->
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="materialInline5"
+                      name="inlineMaterialRadiosExample"
+                    />
+                    <label class="form-check-label" for="materialInline2"
+                      >Facebook</label
+                    >
+                  </div>
+
+                  <!-- Material inline 6 -->
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="materialInline6"
+                      name="inlineMaterialRadiosExample"
+                    />
+                    <label class="form-check-label" for="materialInline3"
+                      >Lain-lain</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- end form radio button  -->
+
+        <!-- form aggrament -->
+        <section id="aggrement">
+          <div class="container">
+            <div class="row justify-content-center pt-5">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  Dengan ini saya menyetujui syarat dan ketentuan Magang yang
+                  ada di PT Jasa Marga (Persero) Tbk.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center pt-2">
+              <button class="btn btn-primary mt-3" type="submit">
+                Kirim lamaran
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- end form aggrament  -->
+      </div>
+    </section>
+    <!-- Content -->
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer_copyright">
+          <!-- Copyright -->
+          <div class="text-white p-3">PT. JASA MARGA (Persero) Tbk.</div>
+          <!-- End Copyright -->
+
+          <!-- Medsos -->
+          <div class="social_links p-2 ml-auto">
+            <a class="btn btn-outline-light btn-floating m-1" href="#"
+              ><i class="bi-instagram"></i
+            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#"
+              ><i class="bi-twitter"></i
+            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#"
+              ><i class="bi-facebook"></i
+            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#"
+              ><i class="bi-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="vendor/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
