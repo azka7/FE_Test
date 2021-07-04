@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../../vendor/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+    />
+
+    <link rel="stylesheet" href="../../style/index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- header -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dashboard">
+          <a class="navbar-brand" href="#">JM<span>-LINX</span></a>
+
+          <div class="main-navbar collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="max-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><h4><i class="bi bi-person-circle"></i></h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!--sidebar start-->
+      <aside>
+        <div id="sidebar" class="nav-collapse">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu">
+            <li>
+              <a class="" href="dashboard-admin.html">Dashboard Admin</a>
+            </li>
+            <li>
+              <a class="" href="#"> Dashboard Pemagang </a>
+            </li>
+            <li>
+              <a class="" href="#">Lowongan Magang</a>
+            </li>
+            <li class="active">
+              <a class="" href="#">Daftar Kandidat</a>
+            </li>
+          </ul>
+          <!-- sidebar menu end-->
+        </div>
+      </aside>
+      <!--sidebar end-->
+
+      <!--main content start-->
+      <section id="main-content">
+        <div class="container">
+          <div class="row pt-4 justify-content-center">
+            <h4 class="page-header text-uppercase">
+              Jumlah Pemagang berdasarkan tipe magang
+            </h4>
+          </div>
+          <div class="row mt-3 justify-content-around">
+            <div class="col-sm-4">
+              <select class="custom-select">
+                <option selected>PMMB</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <select class="custom-select">
+                <option selected>Design Grafis</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3 justify-content-around">
+            <div class="col-sm-4">
+              <select class="custom-select">
+                <option selected>Batch 1 2021</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <select class="custom-select">
+                <option selected>Status Kandidat</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-5 p-3 justify-content-between">
+            <button class="btn btn-primary mb-3">Export Excel</button>
+            <button class="btn btn-success mb-3">Kirim Notifikasi Email</button>
+            <table id="table_id" class="display">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Kandidat</th>
+                  <th>Jurusan</th>
+                  <th>Tanggal Registrasi</th>
+                  <th>Unit Kerja</th>
+                  <th>Hasil Assesmen</th>
+                  <th>Rangking</th>
+                  <th>Status</th>
+                  <th>Email</th>
+                  <th>Aksi</th>
+                  <th>Checkbox</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Annisa Rahma</td>
+                  <td>DKV</td>
+                  <td>20/12/2020</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Review JLI</td>
+                  <td></td>
+                  <td><button class="btn btn-primary">Detail</button></td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Bagas Utomo</td>
+                  <td>DKV</td>
+                  <td>18/12/2020</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Tidak Lolos JLI</td>
+                  <td>Terkirim</td>
+                  <td><button class="btn btn-primary">Detail</button></td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Dinda Sukma</td>
+                  <td>Komunikasi</td>
+                  <td>15/12/2020</td>
+                  <td>CCO</td>
+                  <td></td>
+                  <td></td>
+                  <td>Review Unit</td>
+                  <td></td>
+                  <td><button class="btn btn-primary">Detail</button></td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Erik Putra</td>
+                  <td>DKV</td>
+                  <td>15/12/2020</td>
+                  <td>CCO</td>
+                  <td>80</td>
+                  <td></td>
+                  <td>Review Unit</td>
+                  <td></td>
+                  <td><button class="btn btn-primary">Detail</button></td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Dina S</td>
+                  <td>Fisip</td>
+                  <td>13/12/2020</td>
+                  <td>PFA</td>
+                  <td>85</td>
+                  <td>4</td>
+                  <td>Lolos (Unit)</td>
+                  <td></td>
+                  <td><button class="btn btn-primary">Detail</button></td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Nana Mirdad</td>
+                  <td>DKV</td>
+                  <td>10/12/2020</td>
+                  <td>PFA</td>
+                  <td>67</td>
+                  <td>32</td>
+                  <td>Tidak Lolos (Unit)</td>
+                  <td></td>
+                  <td><button class="btn btn-primary">Detail</button></td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!--main content end-->
+    </div>
+    <!-- Javascript -->
+    <script src="../../vendor/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#table_id").DataTable();
+      });
+    </script>
+
+    <script src="../../script/index.js"></script>
+  </body>
+</html>
