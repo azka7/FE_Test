@@ -2,7 +2,7 @@ h3 {
   color: orange;
 }
 
-.navbar {
+.navbar-home {
   background-color: #d5d6d6;
 }
 
@@ -32,4 +32,93 @@ h3 {
 
 .footer_copyright {
   background-color: blue;
+}
+
+/* daftar_kandidat */
+a span {
+  color: orange;
+}
+
+#sidebar {
+  width: 180px;
+  position: absolute;
+  background: #fff;
+  color: #000;
+}
+
+#sidebar,
+.navbar-dashboard {
+  background-color: #d0d8df;
+}
+
+ul.sidebar-menu {
+  margin: -2px 0 0;
+  padding: 0;
+}
+
+ul.sidebar-menu li {
+  line-height: 20px !important;
+}
+
+ul.sidebar-menu li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 15px 0 15px 10px;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+ul.sidebar-menu li.active a {
+  background: #fff;
+  color: #000;
+  display: block;
+  transition: all 0.3s ease;
+  border: none !important;
+}
+
+ul.sidebar-menu li a:hover,
+ul.sidebar-menu li a:focus {
+  border-bottom: 1px solid #000;
+}
+
+#main-content {
+  margin-left: 180px;
+}
+
+.panel .panel-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+canvas {
+  width: 900px !important;
+  height: 500px !important;
+}
+
+canvas.chart1,
+canvas.chart2 {
+  width: 400px !important;
+  height: 200px !important;
+}
+
+.card {
+  min-height: 174px;
+}
+
+.card .card-header,
+.card .card-footer {
+  background-color: transparent;
+  border-bottom: none;
+  border-top: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-body h5 {
+  font-size: medium;
 }
